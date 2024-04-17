@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 900px;
+            height: 450px;
+            background-color: aqua;
+            margin: auto;
+            border-radius: 15px;
+        }
+
+        tr,
+        td,
+        th {
+            border: solid black;
+        }
+
+        .test {
+            width: 850px;
+            height: 50px;
+            box-shadow: 5px 5px;
+            border-radius: 15px;
+        }
+
+        .box {
+            margin: auto;
+            padding: 10px;
+            border-radius: 15px;
+
+        }
+
+        /* .box>img {
+            width: 100%;
+            height: 45%;
+        } (老師教的)*/
+
+        img {
+            width: 150px;
+            height: 100px;
+        }
+
+        .box01 {
+            margin: auto;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .box02 {
+            margin: auto;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            width: 100px;
+            height: 30px;
+            padding: 10px;
+            background-color: bisque;
+            border-radius: 150px;
+            margin: auto;
+            text-shadow: 3px 3px 3px red;
+        }
+
+        iframe {
+            /* width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center; (另一種語法)*/
+            position: relative;
+            left: 100px;
+            width: 500px;
+            height: 200px;
+        }
+
+        .img {
+            width: 10px;
+            height: 10px;
+            /* float: right; */
+            /* position: fixed;
+            right: 100px;
+            bottom: 100px; */
+        }
+
+        .ad-left {
+            /* float: right; */
+            position: fixed;
+            right: 0px;
+            bottom: 100px;
+        }
+
+        .ad-right {
+            position: fixed;
+            top: 0px;
+            bottom: 100px;
+        }
+
+        .ad-img>img {
+            width: 250px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ad-img ad-left">
+        <img src="./image06jpg.jpg" alt="">
+    </div>
+    <div class="ad-img ad-right">
+        <img src="./image05jpg.jpg" alt="">
+    </div>
+    <table>
+        <h2>旅遊網站</h2>
+        <div>
+            <tr>
+                <td class="box">
+                    <img src="./101night.jpg" alt="">
+                    <img src="./101day.jpg" alt="">
+                </td>
+                <td class="test">
+                    <h6>
+                        地點:<br>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0027471431395!2d121.56196397420086!3d25.033980838294546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zVGFpcGVpIDEwMSwgTm8uIDfkv6Hnvqnot6_kupTmrrXkv6HnvqnljYDlj7DljJfluIIxMTA!5e0!3m2!1szh-TW!2stw!4v1713332383197!5m2!1szh-TW!2stw"
+                            width="10" height="10" style="border:1;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+                        介紹:<br>
+                        (1)台北101景觀台位於台北101大樓的89樓，在這裡，可以俯瞰整個台北。室內觀景台有全方位的觀賞視角，該大樓中還有戶外觀景台，不定期開放。遊客登上戶外觀景台，彷彿天地就在腳下，可以真正享受到極致的觀景體驗。<br>
+                        (2)無限天際－以特殊的鏡像原理，透過天井與地板的層層反射與轉映，感受天地掬手可得與無限延伸的視覺體驗，讓遊客彷彿置身在萬花筒世界。<br>
+                        (3)高空觀景台360度俯瞰大台北全景，一覽無遺的美景盡收眼底。<br>
+                        (4)台灣之美 多媒體走廊、世界之大風阻尼器區，89 樓往 88 樓 270° 多媒體信道觀賞台灣之美，接著進入台北 101 鎮樓之寶-風阻尼器區，與世界之大（直徑 5.5 公尺、660
+                        公噸）風阻尼器面對面。<br>
+                    </h6>
+                </td>
+            </tr>
+            <tr>
+                <td class="box01">
+                    <img src="./image01jpg.jpg" alt="">
+                    <img src="./image04jpg.jpg" alt="">
+                </td>
+                <td class="test">
+                    <h6>
+                        地點:<br>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14454.233857662288!2d121.53929433505421!3d25.082950193540885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac12f6cf7d73%3A0x4d733f290725ce21!2z576O6bqX6I-v55m-5qiC5ZyS5pGp5aSp6Lyq!5e0!3m2!1szh-TW!2stw!4v1713332503544!5m2!1szh-TW!2stw"
+                            width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+                        介紹:<br>
+                        (1)搭乘摩天輪緩緩上升，隨著地面上的景物越來越小，地平線上方的視野越來越寬廣，是許多人的美麗夢想，也是欣賞城市的另一種高度。<br>
+                        (2)美麗華百樂園摩天輪由日本專業製造廠商打造完成，造價高達3億元，高100公尺，重達600公噸，共乘載48個車廂，並安裝了624組霓虹燈管，她讓台北城越夜越美麗。每當夜晚來臨，會依照「天樂、地彩、風舞」等三個主題上演炫麗奪目的霓虹燈光秀，在夜空中綻放變化萬千的放射狀光芒，令人駐足讚賞。<br>
+                        (3)隨著摩天輪的高度漸升，開展至眼前的是與白晝截然不同的景緻，輝煌燈火、迤邐車河、機場亮光交織而成的繽紛夜色，加上璀璨霓虹與輕柔樂聲的陪襯，讓夜晚的摩天輪醞釀出更迷人的氛圍。<br>
+                    </h6>
+                </td>
+            </tr>
+            <tr>
+                <td class="box02">
+                    <img src="./image02jpg.jpg" alt="">
+                    <img src="./image03jpg.jpg" alt="">
+                </td>
+                <td class="test">
+                    <h6>
+                        地點:<br>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7228.47613229756!2d121.56329177770992!3d25.059919000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab85247afa1f%3A0x6e125a21b6f622ba!2z5b2p6Jm55rKz5r-x5YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1713332634283!5m2!1szh-TW!2stw"
+                            width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+                        介紹:<br>
+                        彩虹河濱公園於1981年對外開放，由200多公頃的綠色草地組成，已經成為市民遊憩、親水的空間。彩虹河濱公園內有親水步道、自行車道，還有好幾座壘球和網球場。週末假日期間，可以看到大朋友、小朋友到河濱公園散步健走、慢跑、打球、騎自行車。彩虹河濱公園也是攝影愛好者喜歡駐守的地點，因為它的空間遼闊，可以捕捉不同角度的台北之美。台灣偶像劇《公主小妹》中南風瑾帶小麥放天燈看夜景的場景就是在彩虹河濱公園內拍攝的。<br>
+                    </h6>
+                </td>
+            </tr>
+        </div>
+    </table>
+</body>
+
+</html>

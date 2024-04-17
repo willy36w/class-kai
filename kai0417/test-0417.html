@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgound color</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+            background-color: pink;
+            width: 80%;
+            height: 100vh;
+            margin: auto;
+        }
+
+        table {
+            width: 70%;
+            background-color: bisque;
+            margin: auto;
+            border-collapse: collapse;
+
+        }
+
+        tr,
+        td,
+        th {
+            border: solid black;
+        }
+
+        td,
+        th {
+            width: 50%;
+            height: 50vh;
+        }
+
+        .test {
+            background-color: plum;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background-image: url("https://picsum.photos/id/237/200/200");
+        }
+
+        .test01 {
+            background-color: plum;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background-image: url("https://picsum.photos/id/200/100/100");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="test">
+                        2
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="test01">
+                        3
+                    </div>
+                </td>
+                <td>4</td>
+            </tr>
+
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
