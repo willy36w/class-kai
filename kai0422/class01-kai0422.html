@@ -27,6 +27,27 @@
             width: 33%;
         }
 
+        .card01{
+            position: relative;
+            width: 50%;
+            height: 50px;
+            padding-top: 10px;
+        }
+
+        .card02{
+            position: relative;
+            width: 50%;
+            height: 50px;
+            padding-top: 10px;
+        }
+
+        .card03{
+            position: relative;
+            width: 50%;
+            height: 50px;
+            padding-top: 10px;
+        }
+
         .box-title {
             width: 90%;
             height: 10%;
@@ -37,7 +58,6 @@
         .box-img {
             width: 80%;
             height: 50%;
-            background-color: orange;
             margin: 0 auto;
             margin-top: 10px;
             padding: 10px;
@@ -47,6 +67,27 @@
             width: 100%;
             height: 100%;
             border: 1px solid #ccc;
+        }
+
+        .box-img>img:hover{
+            width: 102%;
+            height: 102%;
+            transition:0.5s ;
+        }
+
+        .box-img>.movie-level{
+            position: absolute;
+            top: 40px;;
+            left: 350px;
+            width: 50px;
+            height: 50px;
+            border: 0;
+        }
+
+        .box-img>.movie-level:hover{
+            width: 60px;
+            height: 60px;
+            transition: 0.5s;
         }
 
         .box-word {
@@ -64,13 +105,15 @@
 <body>
     <div class="row">
         <div class="content">
-            <div class="card">
+           <div class="card01">
+              <div class="card">
                 <div class="box-title">
                     <h1>沙丘</h1>
                     <p>片長 155分鐘，美國片</p>
                 </div>
                 <div class="box-img">
                     <img src="https://upload.wikimedia.org/wikipedia/zh/7/76/Dune_%282021_film%29_poster.jpg" alt="">
+                    <img src="./img0422-1/img01.jpg" alt="" class="movie-level">
                 </div>
                 <div class="box-word">
                     <div>
@@ -78,10 +121,12 @@
                         </p>
                     </div>
                 </div>
-            </div>
+              </div>
+           </div>
         </div>
         <div class="content">
-            <div class="card">
+            <div class="card02">
+              <div class="card">
                 <div class="box-title">
                     <h1>賽德克巴萊</h1>
                     <p>片長 154分鐘（國際版），本土片</p>
@@ -89,7 +134,8 @@
                 <div class="box-img">
                     <img src="https://upload.wikimedia.org/wikipedia/zh/e/e4/%E8%B3%BD%E5%BE%B7%E5%85%8B%C2%B7%E5%B7%B4%E8%90%8A%E9%9B%BB%E5%BD%B1%E6%B5%B7%E5%A0%B1.jpg"
                         alt="">
-                </div>
+                    <img src="./img0422-1/img02.jpg" alt="" class="movie-level">
+                    </div>
                 <div class="box-word">
                     <div>
                         <p>
@@ -99,9 +145,11 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
         <div class="content">
-            <div class="card">
+            <div class="card03">
+              <div class="card">
                 <div class="box-title">
                     <h1>救救蔡英文</h1>
                     <p>片長 133分鐘，印度片</p>
@@ -109,7 +157,8 @@
                 <div class="box-img">
                     <img src="https://image.agentm.tw/images/movie/2d397e13783b6871519c51879de2b5a4b42fa6bd1913c8f9e9b07639d9935f14/poster/thumbnail/589a0270-cb8e-4170-a422-d3acfdc23ce3.jpg"
                         alt="">
-                </div>
+                    <img src="./img0422-1/img03.jpg" alt="" class="movie-level">
+                    </div>
                 <div class="box-word">
                     <div>
                         <p>美麗迷人的莎希（詩麗黛瑋飾演）是印度傳統的家庭主婦，看似擁有全能的才藝和美滿家庭，卻因一口破英文缺乏自信，女兒經常以此嘲弄她，丈夫也不跟她聊公事。直到姊姊邀請她到紐約參加女兒的婚禮，莎希為了幫忙籌備婚禮不得不獨自前往，第一天就因點餐問題出糗，讓她決心偷偷報名四週的英文會話速成班。優雅的莎希也因此吸引了法國男同學羅倫，而這趟紐約行讓她逐漸贏得女兒和丈夫的重視。
@@ -117,6 +166,7 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
     </div>
 </body>
