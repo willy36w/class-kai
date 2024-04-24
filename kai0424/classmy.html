@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            border: 3px solid black;
+            width: 100%;
+            height: 98vh;
+        }
+
+        .row {
+            clear: both;
+        }
+
+        .contain1 {
+            float: left;
+            width: 50%;
+            height: 98vh;
+            background-color: aqua;
+            background-image: url("image/ing01.jpg");
+            background-size: cover;
+        }
+
+        /* 
+        .contain2 {
+            float: left;
+            width: 10%;
+            height: 1vh;
+            background-color: red;
+        } */
+
+        .contain3 {
+            float: right;
+            width: 50%;
+            height: 98vh;
+            background-color: skyblue;
+            /* background-image: url("image/ing02.jpg");
+            background-size: cover; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="contain1"></div>
+            <div class="contain2"></div>
+            <div class="contain3">
+                <img src="./image/ing02.jpg" alt="" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
