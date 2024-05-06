@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 50vh;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            /* align-items: center垂直置中 */
+            align-items: center;
+            /* justify-content: center水平置中或分散 */
+            /* justify-content: center; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 500px;
+            height: 100px;
+            background-color: #ccc;
+            text-align: center;
+            padding-top: 40px;
+            margin-left: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            1
+        </div>
+        <div class="item">
+            2
+        </div>
+        <div class="item">
+            3
+        </div>
+        <div class="item">
+            4
+        </div>
+        <div class="item">
+            5
+        </div>
+        <div class="item">
+            6
+        </div>
+    </div>
+</body>
