@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- css -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 95vh;
+        }
+
+        .container {
+            margin: auto;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .myBtn {
+            width: 200px;
+            height: 200px;
+            font-size: x-large;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        #blackBtn {
+            color: black;
+        }
+
+        #redBtn {
+            color: red;
+        }
+
+        #blueBtn {
+            color: blue;
+        }
+
+        #resultSpan {
+            color: red;
+        }
+
+        #resultDiv {
+            font-size: 30px;
+        }
+
+        #resultimage {
+            text-align: center;
+            width: 30%;
+            height: 40vh;
+            background-size: cover;
+            margin: auto;
+            /* border: 2px solid black; */
+            display: inline-block;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1>color change</h1>
+    </header>
+    <div class="container">
+        <button type="button" id="blackBtn" class="myBtn" data-color="black" data-text="黑色金剛戰士"
+            data-image="<img src='https://images2.gamme.com.tw/news2/2021/04/57/pZmYoKSXlqWWrA.jpg' width = 70%>">blackBtn</button>
+        <button type="button" id="blueBtn" class="myBtn" data-color="blue" data-text="藍色金剛戰士"
+            data-image="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZFMegqrtBWeL__0aDbsYDv5sFSayJHKbZzmLH8_xqw&s' width = 70%>">blueBtn</button>
+        <button type="button" id="redBtn" class="myBtn" data-color="red" data-text="紅色金剛戰士"
+            data-image="<img src='https://image1.gamme.com.tw/news2/2021/04/57/pZmYoKSXlqWWqg.jpg' width = 70%>">redBtn</button>
+    </div>
+    <div class="container">
+        <div id="resultDiv">
+            <span id="resultSpan">XXX</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="resultDiv">
+            <span id="resultimage"></span>
+        </div>
+    </div>
+
+    <!-- js or jqery -->
+    <script>
+        $(document).ready(function () {
+            // jQuery objects
+            const myBtn = $('.myBtn');
+            const resultSpan = $('#resultSpan');
+            const resultimage = $('#resultimage');
+
+            myBtn.click(function () {
+                let nowBtn = $(this);
+
+                let getdataimage = nowBtn.attr('data-image');
+                let getDataColor = nowBtn.attr('data-color');
+                let getDataText = nowBtn.attr('data-text');
+
+                console.log('getDataColor', getDataColor);
+                console.log('getDataText', getDataText);
+                console.log('getdataimage', getdataimage);
+
+                resultSpan.css('color', getDataColor);
+                resultSpan.text(getDataText);
+                resultimage.html(getdataimage);
+            });
+        });
+    </script>
+</body>
+
+</html>

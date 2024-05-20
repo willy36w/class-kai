@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 95vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 按鈕樣式 */
+        .black-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .black-button:hover {
+            background-color: #121212;
+        }
+
+        .blue-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .blue-button:hover {
+            background-color: #1509f4;
+        }
+
+        .red-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .red-button:hover {
+            background-color: #f40919;
+        }
+
+        .khaki-button {
+            background-color: khaki;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .khaki-button:hover {
+            background-color: #ddf40e;
+        }
+
+        .orange-button {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .orange-button:hover {
+            background-color: #fc9606;
+        }
+
+        .purple-button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .purple-button:hover {
+            background-color: #d90af8;
+        }
+
+        /* 結果框樣式 */
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            width: 20%;
+            text-align: center;
+            font-size: 18px;
+            border: 3px solid black;
+            border-radius: 50%;
+            background-color: white;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 按鈕 -->
+    <button class="black-button" onclick="buttonClicked('black')">Don't Click Me!</button>
+    <button class="blue-button" onclick="buttonClicked('blue')">Don't Click Me!</button>
+    <button class="red-button" onclick="buttonClicked('red')">Don't Click Me!</button>
+    <button class="khaki-button" id="khakiButton">Don't Click Me!</button>
+    <button class="orange-button" id="orangeButton">Don't Click Me!</button>
+    <button class="purple-button" id="purpleButton">Don't Click Me!</button>
+
+    <!-- 結果框 -->
+    <div id="result">點擊後顏色顯示在這裡喔!</div>
+
+    <!-- JavaScript -->
+    <script>
+        function buttonClicked(color) {
+            updateResult(color);
+        }
+
+        $(document).ready(function () {
+            // 為不同的按鈕添加點擊事件
+            $('#khakiButton').click(function () {
+                updateResult('khaki');
+            });
+
+            $('#orangeButton').click(function () {
+                updateResult('orange');
+            });
+
+            $('#purpleButton').click(function () {
+                updateResult('purple');
+            });
+        });
+
+        function updateResult(color) {
+            $('#result').text('Button was clicked! The color is ' + color + '.');
+            $('#result').css('background-color', color);
+        }
+    </script>
+</body>
+
+</html>
