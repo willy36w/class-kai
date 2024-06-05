@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery Fading</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            display: none;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-6 mt-3">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary alertBtn" data-div="alert-primary" data-strong="Primary!"
+                        type="button" id="inBtn">IN</button>
+                </div>
+            </div>
+            <div class="col col-sm-6 mt-3">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-warning alertBtn" data-div="alert-warning" data-strong="Warning!"
+                        type="button" id="outBtn">OUT</button>
+                </div>
+            </div>
+        </div>
+        <div class="box"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js or jqery -->
+    <script>
+        // 方法一
+        $(document).ready(function () {
+            // 綁定
+            const box = $('.box');
+            const inBtn = $('#inBtn');
+            const outBtn = $('#outBtn');
+
+            let goFlag = true;
+
+            console.log('inBtn', inBtn);
+            console.log('outBtn', outBtn);
+            // box.fadeIn(3000);
+
+
+            // 動作
+            inBtn.click(function (e) {
+                console.log('fadeIn');
+                if (goFlag) {
+                    box.fadeIn();
+                    // goFlag = true;
+                }
+                // goFlag = false;
+            });
+
+            outBtn.click(function (e) {
+                console.log('fadeOut');
+                if (goFlag) {
+                    box.fadeOut();
+                    // goFlag = true;
+                }
+                // goFlag = false;
+            });
+        });
+        // jquery end
+
+    </script>
+</body>
+
+</html>
