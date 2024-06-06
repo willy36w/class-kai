@@ -6,7 +6,7 @@ function dd($data)
     echo "</pre>";
 }
 
-// 封包
+// 封裝
 class Car 
 {
     // Properties公開
@@ -14,7 +14,6 @@ class Car
     public $type;
 
     // methods連結
-    // 第一個封包
     public function intro(){
         // name的變數 = class是name
         $nowName = $this->name;
@@ -26,7 +25,6 @@ class Car
         echo "$introText <br>";
         // return $introText;
     }
-        // 第二個封包
     public function sell($data){
         $nowName = $this->name;
         $nowType = $this->type;
@@ -38,7 +36,7 @@ class Car
 
 // 繼承
 
-// 在封包建立一個新車new，並給它一個變數
+// 在封裝建立一個新車new，並給它一個變數
 $Benz = new Car();
 // 指定變數的名字
 $Benz->name = 'Benz';
@@ -46,9 +44,9 @@ $Benz->name = 'Benz';
 $Benz->type = 'Bus';
 // dd這個變數顯示在畫面上
 dd($Benz);
-// 指定變數套用在intro()的封包
+// 指定變數套用在intro()的封裝
 $Benz->intro();
-// 指定變數套用在sell(只能放數字(值))的封包
+// 指定變數套用在sell(只能放數字(值))的封裝
 $Benz->sell(250);
 
 $toyota = new Car();
