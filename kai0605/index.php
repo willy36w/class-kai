@@ -6,7 +6,7 @@ function dd($data)
     echo "</pre>";
 }
 
-// 封裝
+
 class Car 
 {
     // Properties公開

@@ -10,38 +10,37 @@ class Animal{
     public $name='animal';
     protected $age=12;
     private $weight=20;
-//  建構子__construct()，實例化
-public function __construct()
+//  建構子__construct()，初始化屬性
+public function __construct($name = 'animal')
     {
         // =是指定運算子不是等於
         $this->name = $name;
     }
 
-public function run()
+public function intro()
    {
-    echo $this->name;
-    echo " is running ";
-   }
 
-private function speed()
-   {
-    return 'high speed';
+    $name = $this->name;
+    $run = "running faster";
+
+    echo "This is a $name, it is $run.";
+    
    }
 
 }
 
-class Cat extends Animal
+class Taiger extends Animal
 {
-    public $name='cat';
+    public $name='taiger';
 
     public function run()
    {
-    echo "cat is running";
+    echo "the taiger is running ";
     echo $this->speed();
-    echo $this->age;
+    echo " Age: " .$this->age;
    }
 
-   private function speed()
+   public function speed()
    {
     return 'low speed';
    }
@@ -50,10 +49,12 @@ class Cat extends Animal
 // 上述為規劃書，下面才是物件導向的內容
 // 設定一個物件
 
-// $cat = new Animal();
-// $cat->run();
+$cat = new Animal('cat');
+$cat->intro();
+echo "<br>";
+$taiger = new taiger('taiger');
+$taiger->run();
 // $cat->$name;
-dd($cat);
 // $dog = new Animal('Tom');
 // $dog->run();
 // $cat = new Cat();
