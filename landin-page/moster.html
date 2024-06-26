@@ -13,59 +13,101 @@
         body {
             background-color: black;
         }
+
+        .carousel-item {
+            width: 100vh;
+            height: 100%;
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid w-100 pt-2 text-center">
-        <div class="row">
-            <div class="col-1">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-lg-1">
                 <a href=""><img src="./image/img5.jpg" alt="" width="80%"></a>
             </div>
-            <div class="col-1 pt-5">
+            <div class="col-sm-12 col-lg-1 pt-5">
                 <a href="">123</a>
             </div>
-            <div class="col-1 pt-5">
+            <div class="col-sm-12 col-lg-1 pt-5">
                 <a href="">123</a>
             </div>
-            <div class="col-1 pt-5">
+            <div class="col-sm-12 col-lg-1 pt-5">
                 <a href="">123</a>
             </div>
-            <div class="col-4">
+            <div class="col-sm-12 col-lg-4">
                 <img src="./image/img4.jpg" alt="" style="width: 100%">
             </div>
-            <div class="col-1 pt-5">
+            <div class="col-sm-12 col-lg-1 pt-5">
                 <a href="">123</a>
             </div>
-            <div class="col-1 pt-5">
+            <div class="col-sm-12 col-lg-1 pt-5">
                 <a href="">123</a>
             </div>
-            <div class="col-1 pt-5">
+            <div class="col-sm-12 col-lg-1 pt-5">
                 <a href="">123</a>
             </div>
-            <div class="col-1">
+            <div class="col-sm-6 col-lg-1">
                 <a href=""><img src="./image/img6.png" alt="" width="80%"></a>
             </div>
         </div>
     </div>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="col-sm-6 col-lg-6 d-flex mt-5 flex-row justify-content-center">
+                        <div class="carousel-item active">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal3">
+                                <img src="./image/img7.jpg" alt="" class="d-block" style="width:100%;">
+                            </button>
+                        </div>
+                        <div class="carousel-item">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                <img src="./image/img8.jpg" alt="" class="d-block" style="width:100%;">
+                            </button>
+                        </div>
+                        <div class=" carousel-item">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                                <img src="./image/img9.jpg" alt="" class="d-block" style="width:100%;">
+                            </button>
+                        </div>
+                        <div class=" carousel-item">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal4">
+                                <img src="./image/img10.jpg" alt="" class="d-block" style="width:100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class=" carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="container mt-3">
         <div class="row">
-            <div class="col-2">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+            <div class="col-4">
+                <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal3">
                     <img src="./image/img7.png" alt="" width="100%">
-                </button>
-                <div class="modal" id="myModal">
-                    <div class="modal-dialog modal-fullscreen">
+                </button> -->
+                <div class="modal" id="myModal3">
+                    <div class="modal-dialog modal-xl">
                         <div class="modal-content"
-                            style="background-image: url(https://www.newton.com.tw/img/9/bb3/7b1b9a217ba5ea154e397eb8298d.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
+                            style="background-image: url(./banner/img01.jpg);background-repeat: no-repeat;background-size: cover;background-position: right;">
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title" style="font-size: 80px;">土砂龍-波爾波羅斯</h4>
+                                <h4 class="modal-title" style="font-size: 70px;">土砂龍</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <!-- Modal body -->
-                            <div class="modal-body" style="font-size: 35px;">
+                            <div class="modal-body" style="font-size: 25px;font-weight: 900;">
                                 是棲息在砂原的獸龍種怪物。<br>
                                 獨特的進化很好地適應了砂原的惡劣環境：<br>
                                 鱗甲變成不易吸收太陽熱輻射的淺棕色；<br>
@@ -84,27 +126,106 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+            <div class="col-4">
+                <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal2">
                     <img src="./image/img8.jpg" alt="" width="100%">
-                </button>
+                </button> -->
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content"
+                            style="background-image: url(https://p2.bahamut.com.tw/B/2KU/57/b22804ba18680958ae05e52f8015xax5.JPG);background-repeat: no-repeat;background-size: cover;background-position: right;">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="font-size: 70px;">轟龍</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body" style="font-size: 25px;font-weight: 900;">
+                                轟龍是一種殘留著原始風貌的飛龍種，<br>
+                                比起其它偏向於西洋龍類和蜥蜴類的飛龍種魔物，<br>
+                                轟龍的外觀更加像是原始的恐龍與飛龍的集合，<br>
+                                其頭部十分像暴龍，而身體則猶如其他蜥蜴類飛龍種一樣，<br>
+                                由於處於進化的初級階段，所以飛行能力不佳。<br>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-2">
+            <div class="col-4">
+                <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="./image/img9.jpg" alt="" width="100%">
+                </button> -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content"
+                            style="background-image: url(./banner/img02.jpg);background-repeat: no-repeat;background-size:100% 100%;background-position: right;">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="font-size: 70px;">搔鳥</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body" style="font-size: 25px;font-weight: 900;">
+                                鳥龍種，擅長使用發達的前腳抓住物體，<br>
+                                會獵捕其他魔物的蛋，<br>
+                                但當他被攻擊時通常會因為受到驚嚇而將手中的蛋摔落，<br>
+                                在對戰中會在地上尋找石頭或硬塊當作武器或阻擋傷害的盾牌使用。 <br>
+                                弱點：需要打擊頭部與前腳，可使用斬擊、打擊或彈藥攻擊。<br>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="./image/img10.jpg" alt="" width="100%">
+                </button> -->
+            </div>
+            <div class="modal" id="myModal4">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content"
+                        style="background-image: url(https://cdn.hk01.com/di/media/images/1161338/org/5f56021e75c8a113fa41d6ab6bec971c.jpg/1wpNi8g5v5kLBumwXY4eqIwq6uLVr2bTZiPbN2Yj2zc?v=w1280r16_9);background-repeat: no-repeat;background-size:100% 100%;background-position: center;">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="font-size: 70px;">角龍</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body" style="font-size: 25px;font-weight: 900;">
+                            角龍的地盤意識非常強烈，<br>
+                            會潛藏在沙漠地底並使用優良的聽力感知地面的入侵敵人，<br>
+                            無論敵人是誰都會採取攻擊。<br>
+                            雖然角龍個性兇猛但確是個完全的草食性魔物，<br>
+                            以沙漠的仙人掌為食物的主要來源，<br>
+                            弱點部位在腹部、翅膀、尾巴，弱點屬性則是為冰、龍、麻痺。<br>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
                     <img src="./image/img7.png" alt="" width="100%">
                 </button>
             </div>
-            <div class="col-2">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
-                    <img src="./image/img7.png" alt="" width="100%">
-                </button>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
-                    <img src="./image/img7.png" alt="" width="100%">
-                </button>
-            </div>
-            <div class="col-2">
+            <div class="col-4">
                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
                     <img src="./image/img7.png" alt="" width="100%">
                 </button>

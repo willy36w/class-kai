@@ -31,11 +31,21 @@
                 /* 調整小螢幕上的文字大小 */
             }
         }
+
+        .navbar {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            position: fixed;
+            z-index: 1000;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark" style="position: fixed; width: 100%; height: 40px;">
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
         <div class="container-fluid">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -125,7 +135,7 @@
     </div>
     <div class="container">
         <div class="row d-flex flex-row justify-content-between mt-3">
-            <div class="col-4 border-end" style="width: 500px;">
+            <div class="col-sm-12 col-lg-4 pt-5 border-end" style="width: 500px;">
                 <img src="https://picsum.photos/id/598/600/400" alt="" width="100%">
                 <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, rem! Rem, saepe dolore animi
                     minus et ipsa, ea eum, error debitis explicabo officia repudiandae dolor! Necessitatibus dolores,
@@ -138,7 +148,7 @@
                     placeat nesciunt maiores sed iste aperiam similique, ipsam veniam fugiat rem. Iste, atque similique.
                 </h6>
             </div>
-            <div class="col-3 d-flex flex-column border-end" style="padding-left: 5px;width: 250px;">
+            <div class="col-sm-12 col-lg-3 pt-5 border-end" style="padding-left: 5px;width: 250px;">
                 <a href=""><img src="https://picsum.photos/id/642/600/400" alt="" width="100%"></a>
                 <span>鼓勵辦法我現在，烏日其實下載地址早已規定這個高校經驗，也沒電話本來一臉娛樂大眾具備的話手上，投資者。</span>
                 <a href=""><img src="https://picsum.photos/id/1062/600/400" alt="" width="100%"></a>
@@ -146,7 +156,7 @@
                 <a href=""><img src="https://picsum.photos/id/1063/600/400" alt="" width="100%"></a>
                 <span>蔬菜網通法院計劃市政府指揮變化事業處於治理加入，本科上下辦理心裡本報光碟忽然中學郵箱機票開關，告訴。</span>
             </div>
-            <div class="col-2 d-flex flex-column border-end" style="width: 300px;">
+            <div class="col-sm-12 col-lg-2 pt-5 border-end" style="width: 300px;">
                 <a href=""><img src="https://picsum.photos/id/211/600/400" alt="" width="100%"></a>
                 <span></span>
                 <a href=""><img src="https://picsum.photos/id/1064/600/400" alt="" width="100%"></a>
@@ -154,7 +164,7 @@
                 <a href=""><img src="https://picsum.photos/id/1065/600/400" alt="" width="100%"></a>
                 <span>主持堅持線上如下劇情危險，節省日常現實不用可用眼前是指普通，都能天下現代化影音社會主義出去，服飾沒。</span>
             </div>
-            <div class="col-2 d-flex flex-column">
+            <div class="col-sm-12 col-lg-2 pt-5">
                 <a href=""><img src="https://picsum.photos/id/1075/600/400" alt="" width="100%"></a>
                 <span>感動宜蘭阿摩斯觀念廣場臺灣車輛，保護產權孤獨，諮詢體會石油形勢能力循環放心如何集中精采收購，藍色加。</span>
                 <a href=""><img src="https://picsum.photos/id/1073/600/400" alt="" width="100%"></a>
@@ -167,56 +177,60 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-between pt-5">
+            <div class="col-12 d-flex justify-content-between">
                 <h1 id="about">About</h1>
                 <a href="#">
                     <h1><i class="fa-solid fa-upload" style="color: black;"></i></h1>
                 </a>
             </div>
             <hr style="border: 1px solid black;">
-            <div class="col-sm-12 col-lg-4 d-flex ">
-                <div class="card" style="width:500px">
-                    <div class="card-body">
-                        <h4 class="card-title">風景照一</h4>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia repellat, sit sint nam
-                            reiciendis incidunt ab quas natus, suscipit nemo deleniti totam provident dolore minima
-                            tempore ullam accusamus! Dolores.
-                        </p>
-                    </div>
-                    <img class="card-img-bottom" src="https://pic.pimg.tw/hcl8029/1381338726-3453159935.png"
-                        alt="Card image" style="display: block;height: 100%;">
-                </div>
-            </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="card" style="width:500px">
-                    <img class="card-img-top"
-                        src="https://st-gdx.dancf.com/gaodingx/1942/articles/0/20201117-161756-b35a.png"
-                        alt="Card image" style="display: block;height: 100%">
-                    <div class="card-body">
-                        <h4 class="card-title">風景照2</h4>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sed voluptates labore
-                            alias laboriosam illo libero explicabo tempore perferendis quis, exercitationem accusantium
-                            assumenda, nesciunt eaque qui nobis beatae nostrum? Eligendi.
-                        </p>
+            <div class="row d-flex flex-row justify-content-center">
+                <div class="col-sm-12 col-lg-4 pt-5">
+                    <div class="card" style="width:400px">
+                        <div class="card-body">
+                            <h4 class="card-title">風景照一</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quia repellat, sit sint
+                                nam
+                                reiciendis incidunt ab quas natus, suscipit nemo deleniti totam provident dolore minima
+                                tempore ullam accusamus! Dolores.
+                            </p>
+                        </div>
+                        <img class="card-img-bottom" src="https://pic.pimg.tw/hcl8029/1381338726-3453159935.png"
+                            alt="Card image" style="display: block;height: 100%;">
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-lg-4">
-                <div class="card img-fluid text-white" style="width:500px">
-                    <img class="card-img-top"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHtex5bxQOkrVK7gC2d54wMviiKxDag0FNz7hv5gFnfILjBhXKZtm22u9hBRy6xjy-HE&usqp=CAU"
-                        alt="Card image" style="display: block;height: 100%">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">風景照3</h4>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, explicabo eius. Incidunt
-                            architecto deserunt perferendis ipsam perspiciatis atque laboriosam et non veritatis
-                            voluptates ab, voluptatem quisquam nam minima magni tenetur.
-                        </p>
+                <div class="col-sm-12 col-lg-4 pt-5">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top"
+                            src="https://st-gdx.dancf.com/gaodingx/1942/articles/0/20201117-161756-b35a.png"
+                            alt="Card image" style="display: block;height: 100%">
+                        <div class="card-body">
+                            <h4 class="card-title">風景照2</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sed voluptates labore
+                                alias laboriosam illo libero explicabo tempore perferendis quis, exercitationem
+                                accusantium
+                                assumenda, nesciunt eaque qui nobis beatae nostrum? Eligendi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 pt-5">
+                    <div class="card img-fluid text-white" style="width:400px">
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHtex5bxQOkrVK7gC2d54wMviiKxDag0FNz7hv5gFnfILjBhXKZtm22u9hBRy6xjy-HE&usqp=CAU"
+                            alt="Card image" style="display: block;height: 100%">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">風景照3</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, explicabo eius. Incidunt
+                                architecto deserunt perferendis ipsam perspiciatis atque laboriosam et non veritatis
+                                voluptates ab, voluptatem quisquam nam minima magni tenetur.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
