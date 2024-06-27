@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .multiplication-table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .multiplication-table th,
+        .multiplication-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .multiplication-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="multiplication-table">
+        <thead>
+            <tr>
+                <th>乘法表</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+        </thead>
+        <tbody id="multiplicationTableBody"></tbody>
+    </table>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p id="myP">
+                    1 * 1 = 1 , 1 * 2 = 2 ,1 * 3 = 3 ...
+                    <br>
+                    2 * 1 = 2 , 2 * 2 = 4 ,2 * 3 = 6 ...
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js or jqery -->
+    <script>
+        // 1.for loop
+
+        // let sum = 0;
+        // for (let i = 1; i <= 10; i++) {
+        //     sum += i;
+        // }
+        // console.log('sum', sum);
+
+        // 2.while
+        // let sum = 0;
+        // let i = 1;
+        // while (i <= 10) {
+        //     sum += i;
+        //     i++;
+        // }
+        // console.log('while sum', sum);
+
+        // 3.do while
+        // let sum = 0;
+        // let i = 1;
+        // do {
+        //     sum += i;
+        //     i++;
+        // } while (i <= 10);
+        // console.log('do while sum', sum);
+
+
+        // for 99乘法表 老師步驟=>創建container、row、col=>innerHTML(顯示在html的畫面)
+        const myP = document.getElementById('myP');
+        let result99 = '';
+        for (let i = 1; i <= 9; i++) {
+            let tmpText = '';
+            for (let j = 1; j <= 9; j++) {
+                let iStr = i.toString().padStart(2, '0');
+                let jStr = j.toString().padStart(2, '0');
+                let ijStr = (i * j).toString().padStart(2, '0');
+                console.log('i', i);
+                console.log('typeof i', typeof (i));
+                console.log('iStr', iStr);
+                console.log('typeof iStr', typeof (iStr));
+                console.log('iStr', iStr);
+                tmpText += `${iStr} * ${jStr} = ${ijStr} &nbsp;&nbsp;&nbsp;`;
+                console.log('tmpText', tmpText);
+            }
+            result99 = result99 + tmpText + "<br>";
+        }
+        myP.innerHTML = result99;
+
+        // 4.for loop 九九乘法表
+        for (let i = 1; i <= 9; i++) {
+            let rowText = ``;
+            for (let j = 1; j <= 9; j++) {
+                let tmpText = `${i} * ${j} = ${i * j} `;
+                rowText = rowText + tmpText;
+            }
+            console.log('rowText', rowText);
+        }
+
+
+        // chat gpt寫法
+        const multiplicationTableBody = document.getElementById('multiplicationTableBody');
+
+        for (let i = 1; i <= 9; i++) {
+            const rowElement = document.createElement('tr');
+            let rowText = `<td>${i}</td>`;
+            console.log(rowText);
+            for (let j = 1; j <= 9; j++) {
+                rowText += `<td>${i} * ${j} = ${i * j}</td>`;
+            }
+            rowElement.innerHTML = rowText;
+            multiplicationTableBody.appendChild(rowElement);
+        }
+    </script>
+
+</body>
+
+</html>
