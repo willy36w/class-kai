@@ -11,28 +11,24 @@
                     <td></td>
                 </tr>
                 <?php
-                $dsn = "mysql:host=localhost;charset=utf8;dbname=db15";
-                $pdo = new PDO($dsn, 'root', '');
-                $sql = "select * from title";
-                $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+                $rows = q("select * from title");
                 foreach ($rows as $row) {
-
                 ?>
-
                     <tr class="cent">
                         <td width="45%">
                             <img src="./images/<?= $row['img']; ?>" style="width: 300px;height:30px">
                         </td>
                         <td width="23%">
-                            <input type="text" name="text" id="text" value="<?= $row['text']; ?>">
+                            <input type="text" name="text[]" id="text" value="<?= $row['text']; ?>">
                         </td>
                         <td width="7%">
-                            <input type="radio" name="sh" id="sh" value="<?= $row['id']; ?>">
+                            <input type="radio" name="sh" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? "checked" : ""; ?>>
                         </td>
                         <td width="7%">
-                            <input type="checkbox" name="del" value="<?= $row['id']; ?>">
+                            <input type="checkbox" name="del[]" value="<?= $row['id']; ?>">
                         </td>
                         <td></td>
+                        <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
                     </tr>
                 <?php
                 }
