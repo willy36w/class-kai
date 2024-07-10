@@ -1,0 +1,21 @@
+/* google fonts */
+
+/* variables css */
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+}
+
+/* colores */
+:root {
+    --first-color: #4070F4;
+    --second-color: #0E2431;
+}
+
+/* fuente y tipografia */
+:root {
+    --body-font: 'Poppons', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+}
