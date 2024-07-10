@@ -11,12 +11,15 @@
                     <td></td>
                 </tr>
                 <?php
-                $rows = q("select * from title");
+
+                //$rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+                $rows = $Title->all();
                 foreach ($rows as $row) {
+
                 ?>
-                    <tr class="cent">
+                    <tr class='cent'>
                         <td width="45%">
-                            <img src="./images/<?= $row['img']; ?>" style="width: 300px;height:30px">
+                            <img src="./images/<?= $row['img']; ?>" style='width:300px;height:30px'>
                         </td>
                         <td width="23%">
                             <input type="text" name="text[]" id="text" value="<?= $row['text']; ?>">
@@ -24,7 +27,7 @@
                         <td width="7%">
                             <input type="radio" name="sh" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? "checked" : ""; ?>>
                         </td>
-                        <td width="7%">
+                        <td width=" 7%">
                             <input type="checkbox" name="del[]" value="<?= $row['id']; ?>">
                         </td>
                         <td></td>
@@ -35,11 +38,16 @@
                 ?>
             </tbody>
         </table>
-        <table style="margin-top:40px; width:70%;">
+        <table style=" margin-top:40px; width:70%;">
             <tbody>
                 <tr>
-                    <td width="200px"><input type="button" onclick="op('#cover','#cvr','./modals/title.php')" value="新增網站標題圖片"></td>
-                    <td class="cent"><input type="submit" value="修改確定"><input type="reset" value="重置"></td>
+                    <td width="200px">
+                        <input type="button" onclick="op('#cover','#cvr','./modals/title.php')" value="新增網站標題圖片">
+                    </td>
+                    <td class="cent">
+                        <input type="submit" value="修改確定">
+                        <input type="reset" value="重置">
+                    </td>
                 </tr>
             </tbody>
         </table>
