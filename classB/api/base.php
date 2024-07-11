@@ -73,6 +73,11 @@ class DB
         $sql = "select count(*) from `$this->table`";
         if (isset($arg[0])) {
             if (is_array($arg[0])) {
+                // $arg[0] = ['id' => 1, 'name' => 'Wang', 'phone' => '0911-111-111'];
+                // $this->a2s($arg[0]) = ["`id`='1'", "`name`='Wang'", "`phone`='0911-111-111'"];
+                // join(" && ", $tmp) = "`id`='1' && `name`='Wang' && `phone`='0911-111-111'";
+                // " where `id`='1' && `name`='Wang' && `phone`='0911-111-111'";
+                // $sql = "select count(*) from `$this->table` where `id`='1' && `name`='Wang' && `phone`='0911-111-111'";
                 $tmp = $this->a2s($arg[0]);
                 $sql .= " where " . join(" && ", $tmp);
             } else {
