@@ -8,7 +8,7 @@
 
 body {
     /* 有調整寬度 */
-    width: 110%;
+    width: 100%;
     color: #ededed;
     background: #081b29;
 }
@@ -161,7 +161,7 @@ body {
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     border-radius: 8px;
 }
 
@@ -539,35 +539,35 @@ section {
     opacity: 0;
 }
 
-.main-text{
+.main-text {
     padding-top: 130px;
     margin-top: 200px;
 }
 
-.main-text h2{
+.main-text h2 {
     font-size: 60px;
     line-height: 1;
     text-align: center;
 }
 
-.main-text h2 span{
+.main-text h2 span {
     color: #0ef;
 }
 
-.portfolio-content{
+.portfolio-content {
     /* 調整display */
     display: inline-flex;
-    grid-template-columns: repeat(auto-fit,minmax(359px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
 }
 
-.row{
+.row {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
 }
 
-.row img{
+.row img {
     /* 調整寬度 */
     width: 80%;
     border-radius: 8px;
@@ -575,10 +575,10 @@ section {
     transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     width: 84%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -593,7 +593,7 @@ section {
     transition: height 0.5s;
 }
 
-.layer h5{
+.layer h5 {
     color: #000;
     font-size: 20px;
     font-weight: 600;
@@ -619,57 +619,57 @@ section {
     border-radius: 50%;
 }
 
-.row:hover img{
-transform: scale(1.1);
+.row:hover img {
+    transform: scale(1.1);
 }
 
-.row:hover .layer{
-    height:100%;
+.row:hover .layer {
+    height: 100%;
 }
 
-.contact{
+.contact {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
 }
 
-.contact-text h2{
+.contact-text h2 {
     font-size: 90px;
     line-height: 1;
     text-align: center;
 }
 
-.contact-text h2 span{
+.contact-text h2 span {
     color: #0ef;
 }
 
-.contact-text h4{
+.contact-text h4 {
     margin: 15px 0;
-    color: rgb(228,228,228);
+    color: rgb(228, 228, 228);
     font-size: 20px;
     font-weight: 600;
 }
 
-.contact-text p{
-    color: rgb(177,177,177);
+.contact-text p {
+    color: rgb(177, 177, 177);
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
 }
 
-.contact-list{
+.contact-list {
     margin-bottom: 3rem;
 }
 
-.contact-list li{
+.contact-list li {
     margin-bottom: 10px;
     display: block;
 }
 
-.contact-list i{
+.contact-list i {
     display: inline-block;
     color: #0ef;
     font-size: 20px;
@@ -677,12 +677,12 @@ transform: scale(1.1);
     transition: all .40s ease;
 }
 
-.contact-list li a:hover{
+.contact-list li a:hover {
     transform: scale(1.01) translateY(-5px);
     color: #0ef;
 }
 
-.contact-icons i{
+.contact-icons i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -701,17 +701,18 @@ transform: scale(1.1);
     animation-delay: calc(.2s * var(--i));
 }
 
-.contact-icons i:hover{
+.contact-icons i:hover {
     background: #0ef;
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
 
-.contact-form form{
+.contact-form form {
     position: relative;
 }
 
-.contact-form form input,form textarea{
+.contact-form form input,
+form textarea {
     border: none;
     outline: none;
     width: 90%;
@@ -722,14 +723,14 @@ transform: scale(1.1);
     font-weight: 600;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
-} 
+}
 
-.contact-form  textarea{
+.contact-form textarea {
     resize: none;
     height: 220px;
 }
 
-.contact-form form .send{
+.contact-form form .send {
     display: inline-block;
     padding: 14px 60px;
     background: #0ef;
@@ -752,22 +753,22 @@ transform: scale(1.1);
         0 0 75px cyan, 0 0 100px cyan
 }
 
-.last-text p{
+.last-text p {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: rgb(7,85,91);
+    background: rgb(7, 85, 91);
     font-weight: 300;
     margin-top: 70px;
 }
 
-.top{
+.top {
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
 }
 
-.top i{
+.top i {
     color: #000;
     background: #0ef;
     font-size: 20px;
@@ -825,5 +826,31 @@ transform: scale(1.1);
     100% {
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .header {
+        /* display: none !important; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 110%;
+        padding: 20px 10%;
+        background: #051129;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .about {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
     }
 }
