@@ -20,6 +20,7 @@
       <a href="#services" style="--i: 3">Skill</a>
       <a href="#skills" style="--i: 4">Portfolio</a>
       <a href="#contact" style="--i: 5">Contact</a>
+      <a href="index.php" style="--i: 6"><i class="fa-solid fa-right-to-bracket"></i>log</a>
     </nav>
   </header>
   <section class="home">
@@ -43,7 +44,7 @@
       <a href="#" class="btn-box">More About Me</a>
     </div>
     <div class="home-img">
-      <img src="https://picsum.photos/id/1025/500/300" alt="" />
+      <img src="https://picsum.photos/id/1025/500/300" alt="" style="width: 100%;" />
     </div>
     <span class="home-imghover"></span>
   </section>

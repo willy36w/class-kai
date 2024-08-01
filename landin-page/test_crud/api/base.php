@@ -116,15 +116,15 @@
 class DB
 {
     protected $table;
-    // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=db01";
-    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1130103";
+    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=db01";
+    // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1130103";
     protected $pdo;
 
     public function __construct($table)
     {
         $this->table = $table;
-        // $this->pdo = new PDO($this->dsn, 'root', '');
-        $this->pdo = new PDO($this->dsn, 's1130103', 's1130103');
+        $this->pdo = new PDO($this->dsn, 'root', '');
+        // $this->pdo = new PDO($this->dsn, 's1130103', 's1130103');
     }
 
     protected function a2s($array)

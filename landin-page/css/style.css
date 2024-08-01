@@ -67,6 +67,7 @@ body {
 
 .home-content {
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .home-content h3 {
@@ -848,7 +849,7 @@ form textarea {
 
     .navbar a {
         display: inline-block;
-        font-size: 15px;
+        font-size: 12px;
         color: #fff;
         text-decoration: none;
         font-weight: 500;
@@ -874,7 +875,9 @@ form textarea {
 @media only screen and (max-width: 40em) {
     .home {
         width: auto;
+        height: 100vh;
         margin: 0 auto;
+        /* padding-top: 10px; */
     }
 
     section {
@@ -893,7 +896,7 @@ form textarea {
     }
 
     .about-img img {
-        padding-bottom: 20%;
+        /* padding-bottom: 20%; */
         max-width: 630px;
         height: auto;
         width: 100%;
@@ -901,12 +904,13 @@ form textarea {
         margin: 0 auto;
     }
 
+    /* 
     .about-text {
-        padding-bottom: 50px;
-    }
+        padding-bottom: 25px;
+    } */
 
     .home-content {
-        padding-bottom: 50px;
+        padding-top: 55px;
     }
 
 
