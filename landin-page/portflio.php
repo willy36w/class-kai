@@ -87,13 +87,13 @@
           </div>
           <div>
             <i class="fa-solid fa-code" style="color: #74c0fc"></i>
-            <img src="./images/img08.jpg" alt="" style=" max-width: 100%;  height: auto;
+            <img src="./images/imgpag.png" alt="" style=" max-width: 100%;  height: 40vh;
             display: block; margin: 0 auto 10px;">
             <h2>SQL</h2>
             <p>
               簡易圖片、個人資料CRUD操作
             </p>
-            <a href="https://wda.mackliu.com/s1130103/landin-page/test_crud/index.php" class="read" target="_blank">On
+            <a href="index.php" class="read" target="_blank">On
               Click
             </a>
           </div>

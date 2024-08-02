@@ -128,7 +128,7 @@
                 tooltip.innerHTML = '登入成功';
 
                 setTimeout(function() {
-                    window.location.href = 'https://wda.mackliu.com/s1130103/landin-page/test_crud/index.php';
+                    window.location.href = 'https://wda.mackliu.com/s1130103/landin-page/crud2/index.php';
                 }, 2000); // 等待2秒後跳轉
             } else {
                 // 登入失敗
